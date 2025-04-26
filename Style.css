@@ -1,18 +1,44 @@
 body {
     font-family: 'Times New Roman', Times, serif,  sans-serif; /* Familia de fuentes */
     font-size: 15px; /* El tamaño de la fuente principal en el tag <p></p> */
-    background-color: #fffffff8; /* El color del fondo de la página web */
-    color: #333333; /* El color del texto*/ 
+    background-color: #0e0d0df8; /* El color del fondo de la página web */
+    color: #f5f2f2; /* El color del texto*/ 
 }
 h1 {
-    color: #2054c4; /* El color de la cabecera */
+    color: #82c2ec; /* El color de la cabecera */
     font-size: 27px; /* El tamaño de la fuente de la cabecera */
     font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
 }
 
 h2{
-    color:#D6FF6B;
+    color:#75d5e6;
     font-size: 25px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
 }
+
+h2:hover { animation: color-change 3s infinite; }
+
+@keyframes color-change {
+    0% {
+      color: cyan;
+    }
+  
+    50% {
+      color: rgb(236, 200, 236);
+    }
+  
+    100% {
+      color: cyan;
+    }
+}
+
+@keyframes image-sized { 
+    0%{ 
+        width: 20cm;
+    }
+    100%{width: 25cm;}
+
+        
+}
+img:hover{ animation: image-sized 3s infinite; }
